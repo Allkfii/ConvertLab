@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steganography | ConvertLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body class="stego-page">
+    <header class="site-header">
+      <div class="header-row">
+        <a href="index.html" class="brand">ConvertLab</a>
+        <div class="nav-box">
+          <button class="nav-item tools-button" id="toolsButton" type="button">
+            Tools
+            <img src="assets/ab375987a2a63c040425f451c0122d4a.svg" alt="arrow" />
+          </button>
+          <div class="tools-menu" id="toolsMenu" aria-label="Tools menu">
+            <a class="tools-menu-item" href="ascii.html">ASCII Converter</a>
+            <a class="tools-menu-item" href="pdf-editor.html">PDF Editor</a>
+            <a class="tools-menu-item" href="rc4.html">RC4 Encryption</a>
+            <a class="tools-menu-item" href="steganography.html">Steganography</a>
+          </div>
+          <a class="nav-item" href="index.html#features">Docs</a>
+          <a class="nav-item" href="https://github.com/Allkfii" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+      </div>
+    </header>
+    <main class="tool-page-main">
+      <div class="page-pill">Steganography</div>
+      
+      <div class="stego-container">
+        <!-- Top Row: Password Card & Message Card -->
+        <div class="stego-top-row">
+          <!-- Password Card -->
+          <div class="stego-card password-card">
+            <h3>Insert data password (Min: 8, Max: 32)</h3>
+            <div class="stego-field-row">
+              <label for="cryptoPass">Cryptography : (A)</label>
+              <input type="password" id="cryptoPass" autocomplete="off" />
+            </div>
+            <div class="stego-field-row">
+              <label for="scramblePass">Scrambling : (B)</label>
+              <input type="password" id="scramblePass" autocomplete="off" />
+            </div>
+          </div>
+          
+          <!-- Hidden Message Card -->
+          <div class="stego-card message-card">
+            <h3>Hidden message (Max: 256mb)</h3>
+            <div class="stego-field-row target-row">
+              <label for="stegoTarget">Message :</label>
+              <div class="input-browse-group">
+                <input type="text" id="stegoTarget" autocomplete="off" />
+                <button type="button" id="browseBtn" class="stego-mini-btn">Browse</button>
+                <input type="file" id="stegoSecretFileInput" accept=".txt" style="display: none;" />
+              </div>
+            </div>
+            <div class="stego-field-row size-row">
+              <label for="stegoSize">Size :</label>
+              <div class="input-size-group">
+                <input type="text" id="stegoSize" readonly />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Bottom Row: Carriers & Bit Selected Options Card -->
+        <div class="stego-large-card">
+          <div class="stego-large-columns">
+            <!-- Left Side: Carrier Files List -->
+            <div class="stego-large-column left-column">
+              <div class="stego-column-header">
+                <span>Name</span>
+                <span>Bytes</span>
+              </div>
+              <div class="stego-carriers-list" id="stegoCarriersList">
+                <!-- Will be populated dynamically -->
+              </div>
+            </div>
+            
+            <!-- Right Side: Bit Selected Options Details -->
+            <div class="stego-large-column right-column">
+              <span class="ascii-group-label" style="display: block; margin-bottom: 12px;">Bit selected options</span>
+              <div class="stego-options-box" id="stegoOptionsBox">
+                <!-- Will be populated dynamically -->
+              </div>
+            </div>
+          </div>
+          
+          <!-- Bottom Action Row -->
+          <div class="stego-large-footer">
+            <button type="button" id="addCarriersBtn" class="ascii-btn">Add carriers</button>
+            <input type="file" id="carrierFileInput" style="display: none;" multiple accept="image/*" />
+            
+            <div class="stego-total-info">
+              <span class="info-label">Selected/Total</span>
+              <span class="info-value" id="stegoTotalBytes">1234 bytes</span>
+            </div>
+            
+            <div class="stego-action-buttons">
+              <button type="button" id="stegoResetBtn" class="ascii-btn">Reset Options</button>
+              <button type="button" id="stegoConvertBtn" class="ascii-btn primary">Convert</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

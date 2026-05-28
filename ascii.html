@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASCII Converter | ConvertLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body class="ascii-page">
+    <header class="site-header">
+      <div class="header-row">
+        <a href="index.html" class="brand">ConvertLab</a>
+        <div class="nav-box">
+          <button class="nav-item tools-button" id="toolsButton" type="button">
+            Tools
+            <img src="assets/ab375987a2a63c040425f451c0122d4a.svg" alt="arrow" />
+          </button>
+          <div class="tools-menu" id="toolsMenu" aria-label="Tools menu">
+            <a class="tools-menu-item" href="ascii.html">ASCII Converter</a>
+            <a class="tools-menu-item" href="pdf-editor.html">PDF Editor</a>
+            <a class="tools-menu-item" href="rc4.html">RC4 Encryption</a>
+            <a class="tools-menu-item" href="steganography.html">Steganography</a>
+          </div>
+          <a class="nav-item" href="index.html#features">Docs</a>
+          <a class="nav-item" href="https://github.com/Allkfii" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+      </div>
+    </header>
+    <main class="tool-page-main">
+      <div class="page-pill">ASCII Converter</div>
+      
+      <div class="ascii-panel">
+        <div class="ascii-dropdowns-row">
+          <div class="ascii-dropdown-group">
+            <span class="ascii-group-label">From</span>
+            <select id="fromSelect" class="ascii-select">
+              <option value="decimal" selected>Decimal</option>
+              <option value="binary">Binary</option>
+              <option value="hex">Hex</option>
+              <option value="text">Text</option>
+            </select>
+          </div>
+          <div class="ascii-dropdown-group">
+            <span class="ascii-group-label">To</span>
+            <select id="toSelect" class="ascii-select">
+              <option value="decimal">Decimal</option>
+              <option value="binary" selected>Binary</option>
+              <option value="hex">Hex</option>
+              <option value="text">Text</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="ascii-field-row">
+          <label id="asciiInputLabel" for="asciiInput">Enter Decimal Number :</label>
+          <input type="text" id="asciiInput" autocomplete="off" />
+        </div>
+        
+        <div class="ascii-action-row">
+          <button type="button" id="asciiSwapBtn" class="ascii-btn">Swap</button>
+          <button type="button" id="asciiResetBtn" class="ascii-btn">Reset</button>
+          <button type="button" id="asciiConvertBtn" class="ascii-btn primary">Convert</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

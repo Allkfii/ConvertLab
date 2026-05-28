@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RC4 Encryption | ConvertLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body class="rc4-page">
+    <header class="site-header">
+      <div class="header-row">
+        <a href="index.html" class="brand">ConvertLab</a>
+        <div class="nav-box">
+          <button class="nav-item tools-button" id="toolsButton" type="button">
+            Tools
+            <img src="assets/ab375987a2a63c040425f451c0122d4a.svg" alt="arrow" />
+          </button>
+          <div class="tools-menu" id="toolsMenu" aria-label="Tools menu">
+            <a class="tools-menu-item" href="ascii.html">ASCII Converter</a>
+            <a class="tools-menu-item" href="pdf-editor.html">PDF Editor</a>
+            <a class="tools-menu-item" href="rc4.html">RC4 Encryption</a>
+            <a class="tools-menu-item" href="steganography.html">Steganography</a>
+          </div>
+          <a class="nav-item" href="index.html#features">Docs</a>
+          <a class="nav-item" href="https://github.com/Allkfii" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+      </div>
+    </header>
+    <main class="tool-page-main">
+      <div class="page-pill">RC4 Encryption</div>
+      
+      <div class="rc4-panel">
+        <div class="rc4-field-row">
+          <label for="messageInput">Message :</label>
+          <input type="text" id="messageInput" autocomplete="off" />
+        </div>
+        
+        <div class="rc4-field-row">
+          <label for="keyInput">Key :</label>
+          <input type="text" id="keyInput" autocomplete="off" />
+        </div>
+        
+        <div class="rc4-field-row">
+          <label for="ciphertextInput">Ciphertext :</label>
+          <input type="text" id="ciphertextInput" autocomplete="off" />
+        </div>
+        
+        <div class="rc4-field-row">
+          <label for="plaintextInput">Plaintext</label>
+          <input type="text" id="plaintextInput" autocomplete="off" />
+        </div>
+        
+        <div class="rc4-action-row">
+          <button type="button" id="encryptBtn" class="rc4-btn">Encrypt</button>
+          <button type="button" id="decryptBtn" class="rc4-btn">Decrypt</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

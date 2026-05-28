@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConvertLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-row">
+        <a href="index.html" class="brand">ConvertLab</a>
+        <div class="nav-box">
+          <button class="nav-item tools-button" id="toolsButton" type="button">
+            Tools
+            <img src="assets/ab375987a2a63c040425f451c0122d4a.svg" alt="arrow" />
+          </button>
+          <div class="tools-menu" id="toolsMenu" aria-label="Tools menu">
+            <a class="tools-menu-item" href="ascii.html">ASCII Converter</a>
+            <a class="tools-menu-item" href="pdf-editor.html">PDF Editor</a>
+            <a class="tools-menu-item" href="rc4.html">RC4 Encryption</a>
+            <a class="tools-menu-item" href="steganography.html">Steganography</a>
+          </div>
+          <a class="nav-item" href="#features">Docs</a>
+          <a class="nav-item" href="https://github.com/Allkfii" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="section hero">
+        <div class="section-content hero-content">
+          <div class="badge">100% Open Source</div>
+          <h1>Everything You Need to Convert and Encrypt.</h1>
+          <p class="hero-subtitle">
+            File conversion, RC4 encryption, steganography, binary &amp; ASCII
+            converters. Completely free.
+          </p>
+          <a class="hero-button" href="#free-section">Get Started</a>
+        </div>
+      </section>
+
+      <section id="free-section" class="free-pin-container">
+        <div class="free-sticky-content">
+          <div class="free-title-wrapper">
+            <span class="free-prefix">ConvertLab is</span>
+            <div class="free-text-ticker">
+              <div class="ticker-item active">Free</div>
+              <div class="ticker-item">100% Open Source</div>
+              <div class="ticker-item ticker-item-medium">No need account</div>
+              <div class="ticker-item">100% Privacy</div>
+              <div class="ticker-item ticker-item-small">Made with love by alkafii</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section features">
+        <div class="section-content features-content">
+          <div class="badge">Features</div>
+          <h2>Powerful Tools. Simple Interface.</h2>
+          <p class="section-subtitle">
+            From file conversion to encryption. No installation. No account
+            needed.
+          </p>
+
+          <div class="cards-grid">
+            <a href="pdf-editor.html" class="feature-card">
+              <img
+                src="assets/7d28ea10ababb0c3e88b6de484dac69a.svg"
+                alt="PDF Editor"
+                class="card-icon"
+              />
+              <div class="card-copy">
+                <h3>PDF Editor</h3>
+                <p>Convert images to PDF or extract PDF to JPG</p>
+              </div>
+              <div class="card-try-now">
+                <span>Try Now</span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" width="16" height="16">
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </a>
+            <a href="steganography.html" class="feature-card">
+              <img
+                src="assets/97c906ab6f917e22d0de467511fdee0e.svg"
+                alt="Steganography"
+                class="card-icon"
+              />
+              <div class="card-copy">
+                <h3>Steganography</h3>
+                <p>Hide messages inside images</p>
+              </div>
+              <div class="card-try-now">
+                <span>Try Now</span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" width="16" height="16">
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </a>
+            <a href="rc4.html" class="feature-card">
+              <img
+                src="assets/4458c3be93006a454a290deebf2c6571.svg"
+                alt="RC4 Encryption"
+                class="card-icon"
+              />
+              <div class="card-copy">
+                <h3>RC4 Encryption</h3>
+                <p>Encrypt text with RC4 cipher</p>
+              </div>
+              <div class="card-try-now">
+                <span>Try Now</span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" width="16" height="16">
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </a>
+            <a href="ascii.html" class="feature-card">
+              <img
+                src="assets/8bf2f237d8b8c08389768a8da5d590d4.svg"
+                alt="ASCII Converter"
+                class="card-icon"
+              />
+              <div class="card-copy">
+                <h3>ASCII Converter</h3>
+                <p>Convert to ASCII</p>
+              </div>
+              <div class="card-try-now">
+                <span>Try Now</span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" width="16" height="16">
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+  </body>
+</html>
